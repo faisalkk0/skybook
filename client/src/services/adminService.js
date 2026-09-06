@@ -1,0 +1,28 @@
+import api from './api';
+
+export const adminService = {
+  overview: () => api.get('/admin/overview'),
+  lookups: () => api.get('/admin/lookups'),
+  users: (params) => api.get('/admin/users', { params }),
+  updateUser: (id, payload) => api.patch(`/admin/users/${id}`, payload),
+  deleteUser: (id) => api.delete(`/admin/users/${id}`),
+  flights: (params) => api.get('/admin/flights', { params }),
+  createFlight: (payload) => api.post('/admin/flights', payload),
+  updateFlight: (id, payload) => api.patch(`/admin/flights/${id}`, payload),
+  cancelFlight: (id) => api.delete(`/admin/flights/${id}`),
+  bookings: (params) => api.get('/admin/bookings', { params }),
+  updateBooking: (id, payload) => api.patch(`/admin/bookings/${id}`, payload),
+  refundBooking: (id, payload) => api.post(`/admin/bookings/${id}/refund`, payload),
+  airports: (params) => api.get('/airports', { params }),
+  createAirport: (payload) => api.post('/airports', payload),
+  updateAirport: (id, payload) => api.patch(`/airports/${id}`, payload),
+  deleteAirport: (id) => api.delete(`/airports/${id}`),
+  airlines: (params) => api.get('/airlines', { params }),
+  createAirline: (payload) => api.post('/airlines', payload),
+  updateAirline: (id, payload) => api.patch(`/airlines/${id}`, payload),
+  deleteAirline: (id) => api.delete(`/airlines/${id}`),
+  aircraft: (params) => api.get('/aircraft', { params }),
+  createAircraft: (payload) => api.post('/aircraft', payload),
+  updateAircraft: (id, payload) => api.patch(`/aircraft/${id}`, payload),
+  deleteAircraft: (id) => api.delete(`/aircraft/${id}`),
+};
