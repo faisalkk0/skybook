@@ -12,7 +12,7 @@ export default function BookingStepper({ current = 0 }) {
         > 
           {step}
         </li>
-      ))}
+      ))} 
     </ol>
   );
 }
