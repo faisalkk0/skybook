@@ -9,7 +9,7 @@ export default function BookingStepper({ current = 0 }) {
           className={`rounded-full px-2 py-2 ${
             index <= current ? 'bg-navy-800 text-white' : 'bg-slate-200 text-slate-500'
           }`}
-        >
+        > 
           {step}
         </li>
       ))}
