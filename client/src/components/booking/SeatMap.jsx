@@ -22,7 +22,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
               {col}
             </span>
           ))}
-        </div>
+        </div> 
         {rows.map((row) => (
           <div 
             key={row}
