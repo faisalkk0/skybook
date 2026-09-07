@@ -24,7 +24,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
           ))}
         </div>
         {rows.map((row) => (
-          <div
+          <div 
             key={row}
             className="mb-1.5 grid items-center"
             style={{ gridTemplateColumns: `40px repeat(${columns.length + 1}, minmax(36px, 1fr))` }}
