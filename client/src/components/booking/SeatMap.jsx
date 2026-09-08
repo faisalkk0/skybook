@@ -21,7 +21,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
             <span key={col} className={index === Math.floor(columns.length / 2) ? 'ml-4' : ''}>
               {col}
             </span>
-          ))}
+          ))}   
         </div> 
         {rows.map((row) => (
           <div   
