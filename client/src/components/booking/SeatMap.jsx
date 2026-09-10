@@ -56,7 +56,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
                 </button>
               );
             })}
-          </div>
+          </div> 
         ))}
       </div>
       <p className="mt-3 text-sm text-slate-500">
