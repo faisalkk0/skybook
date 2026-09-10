@@ -55,7 +55,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
                   {seat.seatNumber}
                 </button>
               );
-            })}
+            })} 
           </div> 
         ))}
       </div>
