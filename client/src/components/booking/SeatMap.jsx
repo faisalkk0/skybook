@@ -57,7 +57,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
               );
             })} 
           </div> 
-        ))}
+        ))} 
       </div>
       <p className="mt-3 text-sm text-slate-500">
         Select {passengerCount} seat{passengerCount > 1 ? 's' : ''}. Occupied seats cannot be chosen.
