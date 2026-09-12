@@ -23,7 +23,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
             </span>
           ))}   
         </div> 
-        {rows.map((row) => ( 
+        {rows.map((row) => (  
           <div   
             key={row}
             className="mb-1.5 grid items-center"
