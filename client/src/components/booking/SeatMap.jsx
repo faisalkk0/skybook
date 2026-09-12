@@ -39,7 +39,7 @@ export default function SeatMap({ seats, selected, passengerCount, onToggle }) {
               return (
                 <button
                   key={seat.seatNumber}
-                  type="button"
+                  type="button" 
                   disabled={disabled} 
                   onClick={() => onToggle(seat)}
                   aria-pressed={isSelected}
